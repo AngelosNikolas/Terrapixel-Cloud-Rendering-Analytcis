@@ -1,0 +1,29 @@
+---
+title: "Structured Abstract"
+author: "Angelos Nikolas"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_knit$set(root.dir= normalizePath('..'))
+```
+
+```{r include=FALSE}
+# Load project
+library("ProjectTemplate")
+load.project()
+source("src/analysis.R")
+```
+The focused domain is Cloud (Super) Computing specifically a performance evaluation of a terapixel rendering of the city of Newcastle. Cloud Computing is an important domain for Data Science specifically in the field of Big Data Analytics. With the large capacity of data storage there is an increasing need for Data Scientists.
+The purpose of this project is to perform an Exploratory Data Analysis focusing on performance evaluation and task schedule analysis.
+
+ProjectTemplate within R as well as GIT version control is used for this project to allow for reproduceability were applicable. Various data manipulation and construction techniques were utilized using plethora of tools.
+
+The EDA process was focused on six objectives. Event run times were ranked, context of interplay on both temperature with performance and power with render time were discussed. Furthermore, two questions that required merging and investigation on all provided data sets were answered. Additionally, investigation on particular tiles regarding computational requirements and a GPU performance comparison were made. Lastly, context regarding the structure of the task scheduling was discussed and findings depicted in the analysis.
+
+This project has set partially the foundations of future work to be conducted in this specific area of Cloud Super Computing rendering and other similar future projects. The possibilities are numerous for a future analysis although is iscd  highly advisable to be based on a business standpoint, this project focused on the exploration and context extraction of the processes utilized.
+```{r fig.width=6, fig.height=2}
+TempHist
+```
+

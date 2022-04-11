@@ -1,0 +1,79 @@
+---
+title: "Analysis Results"
+author: "Angelos Nikolas"
+output: pdf_document
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_knit$set(root.dir= normalizePath('..'))
+```
+
+```{r include=FALSE}
+# Load project
+library("ProjectTemplate")
+load.project()
+source("src/analysis.R")
+```
+
+# Objective 1 Which event types dominate task runtimes?
+By categorizing the events and checking run times the rendering event type dominate the run times. Specifically rendering accounts for approximately 96.7 of the whole process which lasts 42.6 seconds in average for each task. The graph below visually represents the run time difference for each type:
+```{r}
+Barchart1
+
+```
+
+## Objective 2 What is the interplay between GPU temperature and performance? 
+By investigating the GPU's temperature it is noticeable that when the temperature is rising so its the utilization of the GPU's and vice versa. 
+```{r}
+summary(GpuMeans)
+TempHist
+```
+
+## Objective 3 What is the interplay between increased power draw and render time?
+As it was concluded from the 2nd Objective the rendering is the event that dominates run times meaning that every change in the power should account for the rendering needs of the image. By summarizing the data it is noticeable that the GPU's show similar trends regarding power distribution while undertaking a task, the same its true for all tasks undertaken by a single GPU with the difference being the time it occurs. The average highest power draw was 106 Watts and the lowest 80 which is not a significant difference in term of power distribution the the data frame below contains all calculated average power values for all 1024 GPUs. A numerical summary is included to depict how the power distribution vary.
+```{r}
+head(HighPowerDraw)
+summary(HighPowerDraw)
+``` 
+By filtering out the idle time that the GPU's doesn't seem to be rendering we can conclude that for 74.9% of the process of rendering each GPU showed an ascending trend reaching a maximum point before the rendering was concluded. This indicates that for optimal rendering time high power distribution is significant.
+
+## Objective 4 Can we quantify the variation in computation requirements for particular tiles?
+
+By tracing the task ID and matching time stamps assigned to particular tiles it is possible to extract the computational requirements for this particular tile. Also all tasks made for the rendering of the tile. An example is given below.
+```{r}
+summary(GpuComp)
+GpuComp
+```
+Using the task ID it is possible to repeat this process for every tile used in the image and make comparisons if it's needed.
+
+## Objective 5 Can we identify GPU cards (based on their serial numbers) whose performance differs to other cards? (i.e., perpetually slow cards). 
+
+By conducting the process detailed in the main report it is possible to store all GPUs by serial number with the total time it took each one to finish the task assigned to them in minutes. Below is the first 6 entries of a new data frame holding all 1024 GPUs total task run time.
+```{r}
+head(GpuPerfomance)
+
+```
+
+A scatter plot is created to depict the time allocation for each card:
+```{r}
+ Scatter1
+```
+
+It is important to mention that the task allocation in each card is not equally made four specific cards had almost double the tasks allocated to them. Despite that the time it took to finish their tasks is similar to the other cards indicating that these four cards are much faster or configured in way to produce similar results. This can be seen in the task allocation data set that was made to count how many tasks each card was responsible to execute.
+
+
+The average task time can be seen below for all GPUs combined:
+```{r}
+summary(GpuPerfomance)
+```
+
+## Objective 6 What can we learn about the efficiency of the task scheduling process?
+
+For this Objective a general understanding of the whole process is required, the scheduling process has been derived through the EDA process. 1024 graphics cards have been given the task to render a terrapixel visualization of the city of Newcastle, as mentioned above the tasks allocated are no equal across all cards. Although, the performance is very similar to one another each task contain 5 events that need to be completed in order for the tile to be rendered. Each task represents a tile on the image totaling of 65793 tiles. This can be derived quite easily from the EDA process although an interesting find was that each GPU seems to render specific  areas on the visualization this became obvious by examining the x and y columns on the tasks data set that refers to each tile coordinates. An assumption made was that it could be much easier to notice a render issue in specific areas of the image and the whole rendering could occur smoothly if the work is allocated in hierarchical manner.
+```{r}
+head(TileTask)
+```
+
+In this data frame every event for every tile rendered is stored the coordinates indicate an ordered trend suggesting that this specific GPU render tiles connected with one another.

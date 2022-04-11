@@ -1,0 +1,197 @@
+commit 6a2a5386b357bc0e070b090f4f67721e70a53eef
+Author: Angelos Nikolas <a.nikolas2@newcastle.ac.uk>
+Date:   Wed Jan 19 20:25:50 2022 +0000
+
+    Creation of the pdf files
+
+commit dfb998b58ba26034c538ddadce6884d9a5e71bb0
+Author: Angelos Nikolas <a.nikolas2@newcastle.ac.uk>
+Date:   Wed Jan 19 20:24:51 2022 +0000
+
+    Final corrections on the results file
+
+commit 5a4fc45a4ae99310e7000a5018eeb40f5b24f20a
+Author: Angelos Nikolas <a.nikolas2@newcastle.ac.uk>
+Date:   Wed Jan 19 20:23:10 2022 +0000
+
+    Final corrections on the Abstract
+
+commit 0aabf07a504e5397745c520c71eaa4ec3bc708b3
+Author: Angelos Nikolas <a.nikolas2@newcastle.ac.uk>
+Date:   Tue Jan 18 18:46:49 2022 +0000
+
+    Changes and corrections on the main repport
+
+commit a7f096e7890f59acfa66033ef86659e441ef899c
+Author: Angelos Nikolas <a.nikolas2@newcastle.ac.uk>
+Date:   Wed Jan 12 19:56:53 2022 +0000
+
+    Structured Abstract document added
+
+commit 0ba7755c6893d3e93c4101addaa4b25571a24485
+Author: Angelos Nikolas <a.nikolas2@newcastle.ac.uk>
+Date:   Wed Jan 12 19:14:07 2022 +0000
+
+    Minor corrections on the munge file and some spelling mistakes on the writtenReport document, finished the analysis result document
+
+commit 15753248803969d5229c987764ff3837f1a7a2cb
+Author: Angelos Nikolas <a.nikolas2@newcastle.ac.uk>
+Date:   Wed Jan 12 13:56:18 2022 +0000
+
+    Objectives 1-5 finished
+
+commit b373f7a06d5985038730f12c282a41cbfe456f6b
+Author: Angelos Nikolas <a.nikolas2@newcastle.ac.uk>
+Date:   Wed Jan 12 13:45:03 2022 +0000
+
+    Corrected structure and spelling mistakes
+
+commit ad82c91baba57bf28c3b097357fc6268d42ddf50
+Author: Angelos Nikolas <a.nikolas2@newcastle.ac.uk>
+Date:   Wed Jan 12 13:43:38 2022 +0000
+
+     Minor changes in the analysis file
+
+commit e04bf4944b5c153f859a521c9ec09ed13548a83a
+Author: Angelos Nikolas <a.nikolas2@newcastle.ac.uk>
+Date:   Wed Jan 12 13:41:18 2022 +0000
+
+     Minor changes in the munge files
+
+commit 582d1af2513503aee6e267633bf9e160a379b958
+Author: Angelos Nikolas <a.nikolas2@newcastle.ac.uk>
+Date:   Tue Jan 11 22:43:09 2022 +0000
+
+    Wrote the written report
+
+commit 3907cd6745c2c010697c7baa45e129a0e0d7f5d5
+Author: Angelos Nikolas <a.nikolas2@newcastle.ac.uk>
+Date:   Tue Jan 11 22:42:06 2022 +0000
+
+    Changes to the pre-prossesing script of the 3rd EDA objective
+
+commit 2afa5524b866604e27ae2835d73579e2d761087e
+Author: Angelos Nikolas <a.nikolas2@newcastle.ac.uk>
+Date:   Sun Jan 9 18:10:16 2022 +0000
+
+     Added all default files created by the R enviroment
+
+commit 98d00cde95df53deff64aca9898be04ad97e770f
+Author: Angelos Nikolas <a.nikolas2@newcastle.ac.uk>
+Date:   Sun Jan 9 18:08:47 2022 +0000
+
+    Creation of abstract document
+
+commit 232ae25a6f33d4af9ab12a397de7148f9441a61c
+Author: Angelos Nikolas <a.nikolas2@newcastle.ac.uk>
+Date:   Sun Jan 9 18:07:54 2022 +0000
+
+    Creation of the main report document and 1st paragraph
+
+commit c6b4951458903f6f962b34440154159efc8505c2
+Author: Angelos Nikolas <a.nikolas2@newcastle.ac.uk>
+Date:   Sun Jan 9 18:05:41 2022 +0000
+
+    Fixed an error causing the markdown to not produce a pdf document
+
+commit 195fec7e9614a537925e057b3f881740e30dfbab
+Author: Angelos Nikolas <a.nikolas2@newcastle.ac.uk>
+Date:   Sun Jan 9 17:22:32 2022 +0000
+
+     Minor changes on the preprocessing scripts
+
+commit fa51a6bca323d176abef35b56db530f42ea12e22
+Author: Angelos Nikolas <a.nikolas2@newcastle.ac.uk>
+Date:   Sun Jan 9 17:21:18 2022 +0000
+
+    Creation of graphs and numerical summaries for each question for the eda
+
+commit 691c2522f2f708722adf3c41f31400b895d81917
+Author: Angelos Nikolas <a.nikolas2@newcastle.ac.uk>
+Date:   Sat Jan 8 16:37:22 2022 +0000
+
+    Creation of a bar depicting runtimes
+
+commit 17ecd6ce822dc1a7f1959b9cdf628577b7f7b2d9
+Author: Angelos Nikolas <a.nikolas2@newcastle.ac.uk>
+Date:   Sat Jan 8 16:36:15 2022 +0000
+
+    Creation of a new data frame from analysis on gpu temperature
+
+commit a027a41cf16fc0dbde4beb6917a1a70ecb7471f8
+Author: Angelos Nikolas <a.nikolas2@newcastle.ac.uk>
+Date:   Sat Jan 8 14:59:45 2022 +0000
+
+     Preprocessing script for task scheduling investigation
+
+commit 79d664f731cc101fa7b6696f0e316971b57dbd1d
+Author: Angelos Nikolas <a.nikolas2@newcastle.ac.uk>
+Date:   Fri Jan 7 20:54:07 2022 +0000
+
+    Added additional transformation on the gpu perfomance exploration
+
+commit c3189409f684e0f85e3397a47a4f02477945ee68
+Author: Angelos Nikolas <a.nikolas2@newcastle.ac.uk>
+Date:   Fri Jan 7 19:54:19 2022 +0000
+
+    Pre-processing script for gpu perfomance differences
+
+commit eaab81e1d2ebc795e732016c8864fa480d06a6d8
+Author: Angelos Nikolas <A.nikolas@newcastle.ac.uk>
+Date:   Thu Jan 6 20:08:02 2022 +0000
+
+    Added preprocessing script for the computation of particular tiles
+
+commit 6415ca03835b081ce6025aa3c8756352a85b0c44
+Author: Angelos Nikolas <A.nikolas@newcastle.ac.uk>
+Date:   Thu Jan 6 16:50:09 2022 +0000
+
+    Creation of preprocessing script for power and render interplay
+
+commit 4d0997899d0bd008b4963b8c959afd72ed4d7e92
+Author: Angelos Nikolas <A.nikolas@newcastle.ac.uk>
+Date:   Wed Jan 5 18:51:56 2022 +0000
+
+    Preproccesing script for gpu temperature
+
+commit dab404d82e4b71ba0f4995ae98997388f1f4def6
+Author: Angelos Nikolas <A.nikolas@newcastle.ac.uk>
+Date:   Wed Jan 5 15:07:27 2022 +0000
+
+    Preprocessing script for Run Times expoloration
+
+commit cffb90dbb6d4f44e81a3a8c1da929156ef8c2500
+Author: Angelos Nikolas <A.nikolas@newcastle.ac.uk>
+Date:   Wed Jan 5 15:06:35 2022 +0000
+
+    Creation of analysis file
+
+commit c3b45ac46af706a800dfa2f05f5d48130894ea39
+Author: Angelos Nikolas <A.nikolas@newcastle.ac.uk>
+Date:   Tue Dec 28 15:55:42 2021 +0000
+
+    Additon of 2 libraries in the config file
+
+commit c1f537b311087c5539926913d9531e9e0abd773e
+Author: Angelos Nikolas <A.nikolas@newcastle.ac.uk>
+Date:   Tue Dec 28 15:54:50 2021 +0000
+
+    Creation of the analysis file
+
+commit a537993c129bb59f40d653f3aa2f07a0f6ba0060
+Author: Angelos Nikolas <A.nikolas@newcastle.ac.uk>
+Date:   Tue Dec 28 15:46:16 2021 +0000
+
+    Added the datasets in the data directory
+
+commit 4c944e4afeaf0f09b51a40c3ad56c3d70d7e3962
+Author: Angelos Nikolas <A.nikolas@newcastle.ac.uk>
+Date:   Tue Dec 28 15:42:28 2021 +0000
+
+    Creation of markdown file
+
+commit 1034c96a612939ca27e8553a2ea2943691c0cd8b
+Author: Angelos Nikolas <A.nikolas@newcastle.ac.uk>
+Date:   Tue Dec 28 15:31:37 2021 +0000
+
+    Set up Project Template
